@@ -10,6 +10,8 @@ import CounterThree from "./Components/ReducerComponents/CounterThree";
 import React, { useReducer } from "react";
 import ComponentA from "./Components/useReducerAnduseConxet/ComponentA";
 import UseRef from "./Components/UseRef";
+import { SearchParams } from "./Components/RouterComponents/SearchParams";
+import { MultiFilters } from "./Components/RouterComponents/MultiFilters";
 
 export const CountContext = React.createContext()
 const initialState=0;
@@ -41,6 +43,9 @@ function App() {
         <Route path="/reducerconcept3" element={<CounterThree />}/>
         <Route path="/reducercontext" element={<ComponentA />}/>
         <Route path="/useref" element={<UseRef />}/>
+        <Route path="/searchparams" element={<SearchParams />}/>
+        <Route path="/multiparams" element={<MultiFilters />}/>
+        
       </Routes>
       </CountContext.Provider>
         

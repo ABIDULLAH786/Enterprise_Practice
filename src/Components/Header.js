@@ -33,7 +33,43 @@ function Header() {
                   About
                 </Link>
               </li>
-
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  Router Practices
+                </a>
+                <ul name="navbarDropdown" className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link to={"/searchparams"} className="dropdown-item" >
+                    useSearchParams
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/multiparams"} className="dropdown-item" >
+                      Select Multi Filters
+                    </Link>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <Link to={"/"} className="dropdown-item" >
+                      Home
+                    </Link>
+                  </li>
+                </ul>
+              </li>
               
               <li className="nav-item dropdown">
                 <a
@@ -45,7 +81,7 @@ function Header() {
                   aria-expanded="false"
                   aria-haspopup="true"
                 >
-                  Practices
+                  Context API Practices
                 </a>
                 <ul name="navbarDropdown" className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
@@ -89,16 +125,7 @@ function Header() {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link disabled"
-                  href="#"
-                  tabIndex="-1"
-                  aria-disabled="true"
-                >
-                  Disabled
-                </a>
-              </li>
+              
             </ul>
             
           </div>
