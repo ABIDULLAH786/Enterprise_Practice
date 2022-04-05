@@ -59,7 +59,11 @@ function Header() {
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
-                  
+                  <li>
+                    <Link to={"/useformik"} className="dropdown-item" >
+                      useFormik
+                    </Link>
+                  </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
@@ -125,7 +129,62 @@ function Header() {
                   </li>
                 </ul>
               </li>
-              
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  Forms Practices
+                </a>
+                <ul name="navbarDropdown" className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link to={"/useformik"} className="dropdown-item" >
+                      useFormik
+                    </Link>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <Link to={"/"} className="dropdown-item" >
+                      Home
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  HOC Practice
+                </a>
+                <ul name="navbarDropdown" className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link to={"/hoc_1"} className="dropdown-item" >
+                      HOC-1 
+                    </Link>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <Link to={"/"} className="dropdown-item" >
+                      Home
+                    </Link>
+                  </li>
+                </ul>
+              </li>
             </ul>
             
           </div>

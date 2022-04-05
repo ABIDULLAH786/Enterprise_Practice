@@ -12,6 +12,8 @@ import ComponentA from "./Components/useReducerAnduseConxet/ComponentA";
 import UseRef from "./Components/UseRef";
 import { SearchParams } from "./Components/RouterComponents/SearchParams";
 import { MultiFilters } from "./Components/RouterComponents/MultiFilters";
+import { UseFormik } from "./Components/FormComponents/UseFormik";
+import { HOC_1 } from "./Components/HOCComponents/HOC_1";
 
 export const CountContext = React.createContext()
 const initialState=0;
@@ -45,6 +47,8 @@ function App() {
         <Route path="/useref" element={<UseRef />}/>
         <Route path="/searchparams" element={<SearchParams />}/>
         <Route path="/multiparams" element={<MultiFilters />}/>
+        <Route path="/useformik" element={<UseFormik />}/>
+        <Route path="/hoc_1" element={<HOC_1 />}/>
         
       </Routes>
       </CountContext.Provider>
